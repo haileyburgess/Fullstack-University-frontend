@@ -1,0 +1,124 @@
+.home {
+  width: 100%;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 20px;
+  background: blue;
+  color: white;
+  border: 3px solid darkblue;
+  margin-bottom: 20px;
+}
+
+.hero-section h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero-section p {
+  font-size: 18px;
+}
+
+.features-grid {
+  margin-bottom: 30px;
+}
+
+.feature-card {
+  background: white;
+  padding: 15px;
+  border: 2px solid blue;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.feature-card:hover {
+  background: lightblue;
+}
+
+.feature-icon {
+  width: 50px;
+  height: 50px;
+  background: blue;
+  border: 2px solid darkblue;
+  margin: 0 auto 10px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.feature-icon i {
+  font-size: 24px;
+  color: white;
+}
+
+.feature-card h3 {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.feature-link {
+  display: inline-block;
+  background: blue;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid darkblue;
+  font-weight: bold;
+}
+
+.feature-link:hover {
+  background: darkblue;
+}
+
+.stats-section {
+  background: white;
+  padding: 20px;
+  border: 2px solid blue;
+}
+
+.stats-section h2 {
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.stats-grid {
+  text-align: center;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 10px;
+  background: blue;
+  color: white;
+  border: 2px solid darkblue;
+  margin: 5px;
+  display: inline-block;
+  width: 150px;
+}
+
+.stat-item h3 {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.stat-item p {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 15px;
+  }
+
+  .hero-section h1 {
+    font-size: 24px;
+  }
+}
