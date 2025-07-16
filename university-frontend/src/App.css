@@ -1,6 +1,6 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #f0f0f0;
+  font-family: Arial;
+  background: white;
   color: black;
   margin: 0;
   padding: 0;
@@ -12,20 +12,21 @@ body {
 
 /* Navigation */
 .navbar {
-  background: #3498db;
-  padding: 1rem 0;
-  border-bottom: 3px solid #2980b9;
+  background: blue;
+  padding: 10px 0;
+  border-bottom: 3px solid darkblue;
 }
 
 .nav-container {
   width: 100%;
   padding: 10px;
   text-align: center;
+  background: blue;
 }
 
 .nav-logo {
   color: white;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   text-decoration: none;
   margin-right: 20px;
@@ -47,12 +48,13 @@ body {
 }
 
 .nav-link:hover {
-  background-color: #2980b9;
+  background-color: darkblue;
 }
 
 .main-content {
   width: 100%;
   padding: 20px;
+  background: white;
 }
 
 .page-header {
@@ -61,14 +63,14 @@ body {
 }
 
 .page-header h1 {
-  font-size: 32px;
+  font-size: 28px;
   color: black;
   margin-bottom: 10px;
 }
 
 .page-header p {
-  font-size: 16px;
-  color: #666;
+  font-size: 14px;
+  color: black;
 }
 
 .back-link {
@@ -125,7 +127,7 @@ body {
 .no-faculty {
   text-align: center;
   padding: 30px;
-  color: #666;
+  color: black;
 }
 
 .no-data h3,

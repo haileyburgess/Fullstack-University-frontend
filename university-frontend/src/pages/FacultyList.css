@@ -5,9 +5,9 @@
 
 .filters-section {
   background: white;
-  padding: 1.5rem;
-  border: 2px solid #3498db;
-  margin-bottom: 1rem;
+  padding: 15px;
+  border: 2px solid black;
+  margin-bottom: 10px;
 }
 
 .search-box {
@@ -88,12 +88,16 @@
 
 .faculty-card {
   background: white;
-  border: 2px solid #3498db;
-  margin-bottom: 1rem;
+  border: 2px solid black;
+  margin-bottom: 10px;
+  padding: 15px;
+  display: inline-block;
+  width: 280px;
+  vertical-align: top;
 }
 
 .faculty-card:hover {
-  background: #f0f8ff;
+  background: lightblue;
 }
 
 .faculty-image {
@@ -138,13 +142,13 @@
 }
 
 .research-tag {
-  background: #3498db;
+  background: blue;
   color: white;
-  padding: 0.25rem 0.5rem;
-  border: 1px solid #2980b9;
-  font-size: 0.8rem;
+  padding: 5px 10px;
+  border: 1px solid black;
+  font-size: 12px;
   font-weight: bold;
-  margin: 0.25rem;
+  margin: 5px;
 }
 
 .faculty-stats {
@@ -167,17 +171,17 @@
 
 .view-profile-btn {
   display: block;
-  background: #3498db;
+  background: blue;
   color: white;
   text-decoration: none;
-  padding: 0.5rem 1rem;
-  border: 2px solid #2980b9;
+  padding: 10px 20px;
+  border: 2px solid black;
   font-weight: bold;
   text-align: center;
 }
 
 .view-profile-btn:hover {
-  background: #2980b9;
+  background: darkblue;
 }
 
 @media (max-width: 768px) {
