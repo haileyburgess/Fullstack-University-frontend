@@ -1,0 +1,152 @@
+body {
+  font-family: Arial;
+  background: white;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  width: 100%;
+}
+
+/* Navigation */
+.navbar {
+  background: blue;
+  padding: 10px 0;
+  border-bottom: 3px solid darkblue;
+}
+
+.nav-container {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background: blue;
+}
+
+.nav-logo {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  margin: 5px;
+  display: inline-block;
+}
+
+.nav-link:hover {
+  background-color: darkblue;
+}
+
+.main-content {
+  width: 100%;
+  padding: 20px;
+  background: white;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  font-size: 28px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.page-header p {
+  font-size: 14px;
+  color: black;
+}
+
+.back-link {
+  display: inline-block;
+  color: blue;
+  text-decoration: none;
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 2px solid blue;
+}
+
+.back-link:hover {
+  background-color: blue;
+  color: white;
+}
+
+.loading-container,
+.error-container {
+  text-align: center;
+  padding: 50px;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #ccc;
+  border-top: 4px solid blue;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.error-container h2 {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.error-container button {
+  background: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.error-container button:hover {
+  background: darkblue;
+}
+
+.no-data,
+.no-results,
+.no-faculty {
+  text-align: center;
+  padding: 30px;
+  color: black;
+}
+
+.no-data h3,
+.no-results h3 {
+  margin-bottom: 10px;
+  color: black;
+}
+
+/* Basic responsive */
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 5px;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+
+  .page-header h1 {
+    font-size: 24px;
+  }
+}

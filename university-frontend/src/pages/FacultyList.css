@@ -1,0 +1,205 @@
+.faculty-list {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.filters-section {
+  background: white;
+  padding: 15px;
+  border: 2px solid black;
+  margin-bottom: 10px;
+}
+
+.search-box {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.search-box i {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #7f8c8d;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.search-box input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.filter-controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.department-filter {
+  padding: 0.75rem 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: white;
+  min-width: 200px;
+  transition: border-color 0.3s ease;
+}
+
+.department-filter:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.clear-filters-btn {
+  background: #95a5a6;
+  color: white;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.clear-filters-btn:hover {
+  background: #7f8c8d;
+}
+
+.results-info {
+  margin-top: 1rem;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.faculty-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.faculty-card {
+  background: white;
+  border: 2px solid black;
+  margin-bottom: 10px;
+  padding: 15px;
+  display: inline-block;
+  width: 280px;
+  vertical-align: top;
+}
+
+.faculty-card:hover {
+  background: lightblue;
+}
+
+.faculty-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.faculty-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.faculty-info {
+  padding: 1.5rem;
+}
+
+.faculty-info h3 {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 0.25rem;
+}
+
+.faculty-info .title {
+  color: #3498db;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.faculty-info .department {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.research-areas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.research-tag {
+  background: blue;
+  color: white;
+  padding: 5px 10px;
+  border: 1px solid black;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.faculty-stats {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  color: #7f8c8d;
+}
+
+.stat i {
+  margin-right: 0.5rem;
+  color: #3498db;
+}
+
+.view-profile-btn {
+  display: block;
+  background: blue;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid black;
+  font-weight: bold;
+  text-align: center;
+}
+
+.view-profile-btn:hover {
+  background: darkblue;
+}
+
+@media (max-width: 768px) {
+  .filter-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .department-filter {
+    min-width: auto;
+  }
+
+  .faculty-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .faculty-stats {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

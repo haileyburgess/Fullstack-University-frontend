@@ -1,0 +1,171 @@
+.department-detail {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.department-hero {
+  margin-bottom: 20px;
+  background: white;
+  padding: 15px;
+  border: 2px solid black;
+}
+
+.department-image {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.department-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.department-info h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: #7f8c8d;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.contact-info h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.contact-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #7f8c8d;
+}
+
+.contact-item i {
+  color: #3498db;
+  width: 20px;
+  font-size: 1.1rem;
+}
+
+.department-faculty {
+  background: white;
+  padding: 15px;
+  border: 2px solid black;
+}
+
+.department-faculty h3 {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.faculty-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.faculty-card {
+  background: white;
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.faculty-card:hover {
+  background: lightblue;
+}
+
+.faculty-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1rem;
+}
+
+.faculty-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.faculty-info h4 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 0.25rem;
+  text-align: center;
+}
+
+.faculty-info .title {
+  color: #3498db;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.research-areas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.research-tag {
+  background: blue;
+  color: white;
+  padding: 5px 10px;
+  border: 1px solid black;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.view-profile-btn {
+  display: block;
+  background: blue;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid black;
+  font-weight: bold;
+  text-align: center;
+}
+
+.view-profile-btn:hover {
+  background: darkblue;
+}
+
+.no-faculty {
+  text-align: center;
+  padding: 2rem;
+  color: #7f8c8d;
+}
+
+@media (max-width: 768px) {
+  .department-hero {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .department-info h2 {
+    font-size: 2rem;
+  }
+
+  .faculty-grid {
+    grid-template-columns: 1fr;
+  }
+}
