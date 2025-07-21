@@ -67,9 +67,6 @@ const DepartmentDetail = () => {
       </div>
 
       <div className="department-hero">
-        <div className="department-image">
-          <img src={department.image} alt={department.name} />
-        </div>
         <div className="department-info">
           <h2>{department.name}</h2>
           <p className="description">{department.description}</p>

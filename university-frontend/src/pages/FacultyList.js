@@ -142,9 +142,6 @@ const FacultyList = () => {
       <div className="faculty-grid">
         {filteredFaculty.map((member) => (
           <div key={member.id} className="faculty-card">
-            <div className="faculty-image">
-              <img src={member.image} alt={member.name} />
-            </div>
             <div className="faculty-info">
               <h3>{member.name}</h3>
               <p className="title">{member.title}</p>

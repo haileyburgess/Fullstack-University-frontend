@@ -59,9 +59,6 @@ const FacultyDetail = () => {
 
       <div className="faculty-profile">
         <div className="profile-header">
-          <div className="profile-image">
-            <img src={faculty.image} alt={faculty.name} />
-          </div>
           <div className="profile-info">
             <h2>{faculty.name}</h2>
             <p className="title">{faculty.title}</p>

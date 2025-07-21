@@ -8,9 +8,7 @@ export const departments = [
     phone: "(555) 123-4567",
     email: "cs@university.edu",
     location: "Science Building, Room 301",
-    facultyCount: 12,
-    image:
-      "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=300&fit=crop"
+    facultyCount: 12
   },
   {
     id: 2,
@@ -20,9 +18,7 @@ export const departments = [
     phone: "(555) 123-4568",
     email: "math@university.edu",
     location: "Science Building, Room 205",
-    facultyCount: 8,
-    image:
-      "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=400&h=300&fit=crop"
+    facultyCount: 8
   },
   {
     id: 3,
@@ -32,9 +28,7 @@ export const departments = [
     phone: "(555) 123-4569",
     email: "physics@university.edu",
     location: "Science Building, Room 401",
-    facultyCount: 10,
-    image:
-      "https://images.unsplash.com/photo-1506318137071-a8e063a4d0ea?w=400&h=300&fit=crop"
+    facultyCount: 10
   },
   {
     id: 4,
@@ -44,9 +38,7 @@ export const departments = [
     phone: "(555) 123-4570",
     email: "english@university.edu",
     location: "Humanities Building, Room 101",
-    facultyCount: 6,
-    image:
-      "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=300&fit=crop"
+    facultyCount: 6
   },
   {
     id: 5,
@@ -56,9 +48,7 @@ export const departments = [
     phone: "(555) 123-4571",
     email: "biology@university.edu",
     location: "Science Building, Room 501",
-    facultyCount: 15,
-    image:
-      "https://images.unsplash.com/photo-1530026405186-ed1f139313f7?w=400&h=300&fit=crop"
+    facultyCount: 15
   },
   {
     id: 6,
@@ -68,9 +58,7 @@ export const departments = [
     phone: "(555) 123-4572",
     email: "chemistry@university.edu",
     location: "Science Building, Room 601",
-    facultyCount: 9,
-    image:
-      "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop"
+    facultyCount: 9
   }
 ];
 
@@ -92,8 +80,6 @@ export const faculty = [
       "Healthcare Technology",
       "Software Engineering"
     ],
-    image:
-      "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=300&fit=crop&crop=face",
     education: "Ph.D. Computer Science, Stanford University",
     publications: 50,
     awards: ["NSF Career Award", "Best Paper Award, ICML 2020"]
@@ -114,8 +100,6 @@ export const faculty = [
       "Cybersecurity",
       "Database Systems"
     ],
-    image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face",
     education: "Ph.D. Computer Science, MIT",
     publications: 75,
     awards: ["IEEE Fellow", "Distinguished Scientist Award"]
@@ -136,8 +120,6 @@ export const faculty = [
       "Biological Systems",
       "Environmental Science"
     ],
-    image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=face",
     education: "Ph.D. Applied Mathematics, UC Berkeley",
     publications: 25,
     awards: ["Young Investigator Award", "NSF Graduate Fellowship"]
@@ -158,8 +140,6 @@ export const faculty = [
       "Theoretical Physics",
       "Quantum Computing"
     ],
-    image:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face",
     education: "Ph.D. Physics, Caltech",
     publications: 60,
     awards: ["APS Fellow", "CERN Distinguished Researcher"]
@@ -180,8 +160,6 @@ export const faculty = [
       "British Literature",
       "Literary Criticism"
     ],
-    image:
-      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=300&h=300&fit=crop&crop=face",
     education: "Ph.D. English Literature, Yale University",
     publications: 35,
     awards: ["MLA Book Award", "Fulbright Scholar"]
@@ -202,8 +180,6 @@ export const faculty = [
       "Accessibility",
       "User Interface Design"
     ],
-    image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop&crop=face",
     education: "Ph.D. Human-Computer Interaction, Carnegie Mellon",
     publications: 20,
     awards: ["CHI Best Paper Award", "Google Faculty Research Award"]
@@ -224,8 +200,6 @@ export const faculty = [
       "Cell Biology",
       "Disease Mechanisms"
     ],
-    image:
-      "https://images.unsplash.com/photo-1548142813-c348350df52b?w=300&h=300&fit=crop&crop=face",
     education: "Ph.D. Molecular Biology, Harvard University",
     publications: 80,
     awards: ["HHMI Investigator", "National Academy of Sciences Member"]
@@ -246,8 +220,6 @@ export const faculty = [
       "Synthetic Methods",
       "Medicinal Chemistry"
     ],
-    image:
-      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=300&fit=crop&crop=face",
     education: "Ph.D. Chemistry, UC San Diego",
     publications: 45,
     awards: ["ACS Young Investigator Award", "NIH R01 Grant"]

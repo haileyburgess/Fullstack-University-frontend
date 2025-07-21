@@ -55,9 +55,6 @@ const DepartmentsList = () => {
       <div className="departments-grid">
         {departments.map((department) => (
           <div key={department.id} className="department-card">
-            <div className="department-image">
-              <img src={department.image} alt={department.name} />
-            </div>
             <div className="department-content">
               <h3>{department.name}</h3>
               <p>{department.description}</p>
