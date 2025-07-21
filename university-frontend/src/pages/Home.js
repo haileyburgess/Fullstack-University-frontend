@@ -14,9 +14,6 @@ const Home = () => {
 
       <div className="features-grid">
         <div className="feature-card">
-          <div className="feature-icon">
-            <i className="fas fa-university"></i>
-          </div>
           <h3>Academic Departments</h3>
           <p>
             Discover our diverse range of academic departments, each offering
@@ -28,9 +25,6 @@ const Home = () => {
         </div>
 
         <div className="feature-card">
-          <div className="feature-icon">
-            <i className="fas fa-user-graduate"></i>
-          </div>
           <h3>Faculty Directory</h3>
           <p>
             Meet our accomplished faculty members who are experts in their
@@ -42,9 +36,6 @@ const Home = () => {
         </div>
 
         <div className="feature-card">
-          <div className="feature-icon">
-            <i className="fas fa-chart-line"></i>
-          </div>
           <h3>Research Excellence</h3>
           <p>
             Explore groundbreaking research conducted by our faculty across

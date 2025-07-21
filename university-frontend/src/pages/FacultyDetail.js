@@ -52,7 +52,7 @@ const FacultyDetail = () => {
     <div className="faculty-detail">
       <div className="page-header">
         <Link to="/faculty" className="back-link">
-          <i className="fas fa-arrow-left"></i> Back to Faculty
+          Back to Faculty
         </Link>
         <h1>{faculty.name}</h1>
       </div>
@@ -90,18 +90,9 @@ const FacultyDetail = () => {
         <div className="contact-section">
           <h3>Contact Information</h3>
           <div className="contact-grid">
-            <div className="contact-item">
-              <i className="fas fa-phone"></i>
-              <span>{faculty.phone}</span>
-            </div>
-            <div className="contact-item">
-              <i className="fas fa-envelope"></i>
-              <span>{faculty.email}</span>
-            </div>
-            <div className="contact-item">
-              <i className="fas fa-map-marker-alt"></i>
-              <span>{faculty.office}</span>
-            </div>
+            <div className="contact-item">Phone: {faculty.phone}</div>
+            <div className="contact-item">Email: {faculty.email}</div>
+            <div className="contact-item">Office: {faculty.office}</div>
           </div>
         </div>
 
@@ -126,8 +117,7 @@ const FacultyDetail = () => {
           <ul className="awards-list">
             {faculty.awards.map((award, index) => (
               <li key={index} className="award-item">
-                <i className="fas fa-trophy"></i>
-                <span>{award}</span>
+                {award}
               </li>
             ))}
           </ul>

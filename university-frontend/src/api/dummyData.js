@@ -10,8 +10,7 @@ export const departments = [
     location: "Science Building, Room 301",
     facultyCount: 12,
     image:
-      "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=300&fit=crop",
-    icon: "fas fa-laptop-code"
+      "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=300&fit=crop"
   },
   {
     id: 2,
@@ -23,8 +22,7 @@ export const departments = [
     location: "Science Building, Room 205",
     facultyCount: 8,
     image:
-      "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=400&h=300&fit=crop",
-    icon: "fas fa-square-root-alt"
+      "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=400&h=300&fit=crop"
   },
   {
     id: 3,
@@ -36,8 +34,7 @@ export const departments = [
     location: "Science Building, Room 401",
     facultyCount: 10,
     image:
-      "https://images.unsplash.com/photo-1506318137071-a8e063a4d0ea?w=400&h=300&fit=crop",
-    icon: "fas fa-atom"
+      "https://images.unsplash.com/photo-1506318137071-a8e063a4d0ea?w=400&h=300&fit=crop"
   },
   {
     id: 4,
@@ -49,8 +46,7 @@ export const departments = [
     location: "Humanities Building, Room 101",
     facultyCount: 6,
     image:
-      "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=300&fit=crop",
-    icon: "fas fa-book-open"
+      "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=300&fit=crop"
   },
   {
     id: 5,
@@ -62,8 +58,7 @@ export const departments = [
     location: "Science Building, Room 501",
     facultyCount: 15,
     image:
-      "https://images.unsplash.com/photo-1530026405186-ed1f139313f7?w=400&h=300&fit=crop",
-    icon: "fas fa-dna"
+      "https://images.unsplash.com/photo-1530026405186-ed1f139313f7?w=400&h=300&fit=crop"
   },
   {
     id: 6,
@@ -75,8 +70,7 @@ export const departments = [
     location: "Science Building, Room 601",
     facultyCount: 9,
     image:
-      "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop",
-    icon: "fas fa-flask"
+      "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop"
   }
 ];
 

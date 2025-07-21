@@ -57,22 +57,15 @@ const DepartmentsList = () => {
           <div key={department.id} className="department-card">
             <div className="department-image">
               <img src={department.image} alt={department.name} />
-              <div className="department-overlay">
-                <i className={department.icon}></i>
-              </div>
             </div>
             <div className="department-content">
               <h3>{department.name}</h3>
               <p>{department.description}</p>
               <div className="department-meta">
                 <span className="faculty-count">
-                  <i className="fas fa-users"></i>
                   {department.facultyCount} Faculty Members
                 </span>
-                <span className="location">
-                  <i className="fas fa-map-marker-alt"></i>
-                  {department.location}
-                </span>
+                <span className="location">{department.location}</span>
               </div>
               <Link
                 to={`/departments/${department.id}`}

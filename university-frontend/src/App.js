@@ -16,10 +16,7 @@ function App() {
         {/* Navigation Header */}
         <nav className="navbar">
           <div className="nav-container">
-            <div className="nav-logo">
-              <i className="fas fa-university"></i>
-              <span>University Portal</span>
-            </div>
+            <div className="nav-logo">University Portal</div>
             <ul className="nav-menu">
               <li className="nav-item">
                 <Link to="/" className="nav-link">
