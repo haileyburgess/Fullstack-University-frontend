@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Portal - Wireframe</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">University Portal</div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#departments" class="nav-link">Departments</a></li>
+          <li><a href="#faculty" class="nav-link">Faculty</a></li>
+          <li><a href="#admin" class="nav-link">Admin</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="main-content">
+      <!-- Home Section -->
+      <section id="home" class="hero-section">
+        <h1>Welcome to University Portal</h1>
+        <p>Explore our academic departments and meet our faculty members</p>
+      </section>
+
+      <section class="features-grid">
+        <div class="feature-card">
+          <h3>Academic Departments</h3>
+          <p>
+            Discover our diverse range of academic departments, each offering
+            cutting-edge programs and research opportunities.
+          </p>
+          <a href="#departments" class="feature-link">Browse Departments</a>
+        </div>
+
+        <div class="feature-card">
+          <h3>Faculty Directory</h3>
+          <p>
+            Meet our accomplished faculty members who are experts in their
+            fields and dedicated to student success.
+          </p>
+          <a href="#faculty" class="feature-link">View Faculty</a>
+        </div>
+
+        <div class="feature-card">
+          <h3>Research Excellence</h3>
+          <p>
+            Explore groundbreaking research conducted by our faculty across
+            various disciplines and fields of study.
+          </p>
+          <a href="#faculty" class="feature-link">Research Areas</a>
+        </div>
+      </section>
+
+      <section class="stats-section">
+        <h2>University Statistics</h2>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <h3>25+</h3>
+            <p>Academic Departments</p>
+          </div>
+          <div class="stat-item">
+            <h3>500+</h3>
+            <p>Faculty Members</p>
+          </div>
+          <div class="stat-item">
+            <h3>15,000+</h3>
+            <p>Students</p>
+          </div>
+          <div class="stat-item">
+            <h3>100+</h3>
+            <p>Research Projects</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Departments Section -->
+      <section id="departments" class="departments-section">
+        <div class="page-header">
+          <h1>Academic Departments</h1>
+          <p>Explore our diverse academic departments and their faculty</p>
+        </div>
+
+        <div class="departments-grid">
+          <div class="department-card">
+            <div class="department-content">
+              <h3>Computer Science</h3>
+              <p>
+                Explore the world of computing, algorithms, and software
+                development.
+              </p>
+              <div class="department-meta">
+                <span class="faculty-count">12 Faculty Members</span>
+                <span class="location">Engineering Building, Room 201</span>
+              </div>
+              <button class="view-details-btn">View Details</button>
+            </div>
+          </div>
+
+          <div class="department-card">
+            <div class="department-content">
+              <h3>Mathematics</h3>
+              <p>
+                Study pure and applied mathematics, statistics, and mathematical
+                modeling.
+              </p>
+              <div class="department-meta">
+                <span class="faculty-count">8 Faculty Members</span>
+                <span class="location">Science Building, Room 301</span>
+              </div>
+              <button class="view-details-btn">View Details</button>
+            </div>
+          </div>
+
+          <div class="department-card">
+            <div class="department-content">
+              <h3>Physics</h3>
+              <p>Discover the fundamental laws of nature and the universe.</p>
+              <div class="department-meta">
+                <span class="faculty-count">10 Faculty Members</span>
+                <span class="location">Physics Building, Room 101</span>
+              </div>
+              <button class="view-details-btn">View Details</button>
+            </div>
+          </div>
+
+          <div class="department-card">
+            <div class="department-content">
+              <h3>English Literature</h3>
+              <p>
+                Explore classic and contemporary literature from around the
+                world.
+              </p>
+              <div class="department-meta">
+                <span class="faculty-count">15 Faculty Members</span>
+                <span class="location">Humanities Building, Room 401</span>
+              </div>
+              <button class="view-details-btn">View Details</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Faculty Section -->
+      <section id="faculty" class="faculty-section">
+        <div class="page-header">
+          <h1>Faculty Directory</h1>
+          <p>Meet our accomplished faculty members</p>
+        </div>
+
+        <div class="filters-section">
+          <div class="search-box">
+            <input
+              type="text"
+              placeholder="Search faculty..."
+              class="search-input" />
+          </div>
+          <div class="filter-options">
+            <select class="department-filter">
+              <option value="">All Departments</option>
+              <option value="computer-science">Computer Science</option>
+              <option value="mathematics">Mathematics</option>
+              <option value="physics">Physics</option>
+              <option value="english">English Literature</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="faculty-grid">
+          <div class="faculty-card">
+            <div class="faculty-info">
+              <h3>Dr. Sarah Johnson</h3>
+              <p class="faculty-title">Professor of Computer Science</p>
+              <p class="faculty-department">Computer Science Department</p>
+              <div class="faculty-stats">
+                <span class="stat">25 publications</span>
+                <span class="stat">5 awards</span>
+              </div>
+              <button class="view-profile-btn">View Profile</button>
+            </div>
+          </div>
+
+          <div class="faculty-card">
+            <div class="faculty-info">
+              <h3>Dr. Michael Chen</h3>
+              <p class="faculty-title">Associate Professor of Mathematics</p>
+              <p class="faculty-department">Mathematics Department</p>
+              <div class="faculty-stats">
+                <span class="stat">18 publications</span>
+                <span class="stat">3 awards</span>
+              </div>
+              <button class="view-profile-btn">View Profile</button>
+            </div>
+          </div>
+
+          <div class="faculty-card">
+            <div class="faculty-info">
+              <h3>Dr. Emily Rodriguez</h3>
+              <p class="faculty-title">Professor of Physics</p>
+              <p class="faculty-department">Physics Department</p>
+              <div class="faculty-stats">
+                <span class="stat">32 publications</span>
+                <span class="stat">7 awards</span>
+              </div>
+              <button class="view-profile-btn">View Profile</button>
+            </div>
+          </div>
+
+          <div class="faculty-card">
+            <div class="faculty-info">
+              <h3>Dr. David Thompson</h3>
+              <p class="faculty-title">Associate Professor of English</p>
+              <p class="faculty-department">English Literature Department</p>
+              <div class="faculty-stats">
+                <span class="stat">15 publications</span>
+                <span class="stat">2 awards</span>
+              </div>
+              <button class="view-profile-btn">View Profile</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Admin Section -->
+      <section id="admin" class="admin-section">
+        <div class="page-header">
+          <h1>Admin Portal</h1>
+          <p>Manage departments and faculty</p>
+        </div>
+
+        <div class="admin-actions">
+          <button class="admin-btn">Add Department</button>
+          <button class="admin-btn">Add Faculty</button>
+          <button class="admin-btn">Edit Content</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

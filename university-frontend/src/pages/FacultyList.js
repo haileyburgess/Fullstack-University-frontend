@@ -104,7 +104,6 @@ const FacultyList = () => {
 
       <div className="filters-section">
         <div className="search-box">
-          <i className="fas fa-search"></i>
           <input
             type="text"
             placeholder="Search faculty by name, title, or research area..."
@@ -143,9 +142,6 @@ const FacultyList = () => {
       <div className="faculty-grid">
         {filteredFaculty.map((member) => (
           <div key={member.id} className="faculty-card">
-            <div className="faculty-image">
-              <img src={member.image} alt={member.name} />
-            </div>
             <div className="faculty-info">
               <h3>{member.name}</h3>
               <p className="title">{member.title}</p>
@@ -165,14 +161,8 @@ const FacultyList = () => {
               </div>
 
               <div className="faculty-stats">
-                <span className="stat">
-                  <i className="fas fa-file-alt"></i>
-                  {member.publications} publications
-                </span>
-                <span className="stat">
-                  <i className="fas fa-trophy"></i>
-                  {member.awards.length} awards
-                </span>
+                <span className="stat">{member.publications} publications</span>
+                <span className="stat">{member.awards.length} awards</span>
               </div>
 
               <Link to={`/faculty/${member.id}`} className="view-profile-btn">

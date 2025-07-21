@@ -61,15 +61,12 @@ const DepartmentDetail = () => {
     <div className="department-detail">
       <div className="page-header">
         <Link to="/departments" className="back-link">
-          <i className="fas fa-arrow-left"></i> Back to Departments
+          Back to Departments
         </Link>
         <h1>{department.name}</h1>
       </div>
 
       <div className="department-hero">
-        <div className="department-image">
-          <img src={department.image} alt={department.name} />
-        </div>
         <div className="department-info">
           <h2>{department.name}</h2>
           <p className="description">{department.description}</p>
@@ -77,17 +74,10 @@ const DepartmentDetail = () => {
           <div className="contact-info">
             <h3>Contact Information</h3>
             <div className="contact-grid">
+              <div className="contact-item">Phone: {department.phone}</div>
+              <div className="contact-item">Email: {department.email}</div>
               <div className="contact-item">
-                <i className="fas fa-phone"></i>
-                <span>{department.phone}</span>
-              </div>
-              <div className="contact-item">
-                <i className="fas fa-envelope"></i>
-                <span>{department.email}</span>
-              </div>
-              <div className="contact-item">
-                <i className="fas fa-map-marker-alt"></i>
-                <span>{department.location}</span>
+                Location: {department.location}
               </div>
             </div>
           </div>
