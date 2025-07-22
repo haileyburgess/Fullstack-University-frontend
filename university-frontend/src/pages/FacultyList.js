@@ -57,6 +57,19 @@ const FacultyList = () => {
       <div className="faculty-grid">
         {faculty.map((member) => (
           <div key={member.id} className="faculty-card">
+            <div className="faculty-image">
+              <img
+                src={
+                  member.profileImage ||
+                  "https://via.placeholder.com/150x200?text=Faculty+Member"
+                }
+                alt={`${member.name}`}
+                onError={(e) => {
+                  e.target.src =
+                    "https://via.placeholder.com/150x200?text=Faculty+Member";
+                }}
+              />
+            </div>
             <div className="faculty-info">
               <h3>{member.name}</h3>
               <p className="title">{member.title}</p>

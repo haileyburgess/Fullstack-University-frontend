@@ -59,6 +59,19 @@ const FacultyDetail = () => {
 
       <div className="faculty-profile">
         <div className="profile-header">
+          <div className="profile-image">
+            <img
+              src={
+                faculty.profileImage ||
+                "https://via.placeholder.com/300x400?text=Faculty+Member"
+              }
+              alt={`${faculty.name}`}
+              onError={(e) => {
+                e.target.src =
+                  "https://via.placeholder.com/300x400?text=Faculty+Member";
+              }}
+            />
+          </div>
           <div className="profile-info">
             <h2>{faculty.name}</h2>
             <p className="title">{faculty.title}</p>

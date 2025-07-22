@@ -67,6 +67,19 @@ const DepartmentDetail = () => {
       </div>
 
       <div className="department-hero">
+        <div className="department-banner">
+          <img
+            src={
+              department.bannerImage ||
+              "https://via.placeholder.com/800x300?text=Department+Banner"
+            }
+            alt={`${department.name} Department`}
+            onError={(e) => {
+              e.target.src =
+                "https://via.placeholder.com/800x300?text=Department+Banner";
+            }}
+          />
+        </div>
         <div className="department-info">
           <h2>{department.name}</h2>
           <p className="description">{department.description}</p>
@@ -92,7 +105,17 @@ const DepartmentDetail = () => {
             {faculty.map((member) => (
               <div key={member.id} className="faculty-card">
                 <div className="faculty-image">
-                  <img src={member.image} alt={member.name} />
+                  <img
+                    src={
+                      member.profileImage ||
+                      "https://via.placeholder.com/150x200?text=Faculty+Member"
+                    }
+                    alt={member.name}
+                    onError={(e) => {
+                      e.target.src =
+                        "https://via.placeholder.com/150x200?text=Faculty+Member";
+                    }}
+                  />
                 </div>
                 <div className="faculty-info">
                   <h4>{member.name}</h4>
