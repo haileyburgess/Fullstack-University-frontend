@@ -3,8 +3,8 @@ import { createApiHeaders } from "../utils/corsConfig";
 // API Service for backend communication
 const API_BASE_URL =
   process.env.NODE_ENV === "production"
-    ? process.env.REACT_APP_API_BASE_URL || "http://localhost:3001/api"
-    : "/api"; // Use proxy in development
+    ? process.env.REACT_APP_API_BASE_URL || "http://localhost:3002/api"
+    : "http://localhost:3002/api"; // Use direct connection in development
 
 class ApiService {
   constructor() {
