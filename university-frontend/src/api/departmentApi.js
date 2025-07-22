@@ -1,36 +1,25 @@
 import apiService from "./apiService";
-import { departments as dummyDepartments } from "./dummyData";
 
 class DepartmentApiService {
   // Get all departments
   async getAllDepartments() {
     try {
-      // Try to fetch from backend first
       const response = await apiService.get("/departments");
       return response;
     } catch (error) {
-      console.warn("Backend not available, using dummy data:", error.message);
-      // Fallback to dummy data if backend is not available
-      return dummyDepartments;
+      console.error("Failed to fetch departments:", error);
+      throw error;
     }
   }
 
   // Get a single department by ID
   async getDepartmentById(id) {
     try {
-      // Try to fetch from backend first
       const response = await apiService.get(`/departments/${id}`);
       return response;
     } catch (error) {
-      console.warn("Backend not available, using dummy data:", error.message);
-      // Fallback to dummy data if backend is not available
-      const department = dummyDepartments.find(
-        (dept) => dept.id === parseInt(id)
-      );
-      if (!department) {
-        throw new Error("Department not found");
-      }
-      return department;
+      console.error("Failed to fetch department:", error);
+      throw error;
     }
   }
 
@@ -76,19 +65,8 @@ class DepartmentApiService {
       const response = await apiService.get("/departments/stats");
       return response;
     } catch (error) {
-      console.warn("Backend not available, using dummy stats:", error.message);
-      // Fallback to dummy stats
-      return {
-        totalDepartments: dummyDepartments.length,
-        totalFaculty: dummyDepartments.reduce(
-          (sum, dept) => sum + dept.facultyCount,
-          0
-        ),
-        averageFacultyPerDepartment: Math.round(
-          dummyDepartments.reduce((sum, dept) => sum + dept.facultyCount, 0) /
-            dummyDepartments.length
-        )
-      };
+      console.error("Failed to fetch department stats:", error);
+      throw error;
     }
   }
 }
