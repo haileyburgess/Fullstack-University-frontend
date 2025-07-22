@@ -34,6 +34,24 @@
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
+.department-banner {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.department-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.department-card:hover .department-banner img {
+  transform: scale(1.05);
+}
+
 .department-content {
   padding: 30px;
 }
