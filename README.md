@@ -1,6 +1,6 @@
-# University Frontend Wireframe
+# Fullstack University Application
 
-A comprehensive wireframe for a university frontend application showcasing departments, faculty, and administrative functionality.
+A full-stack university portal application with React frontend and Node.js backend, featuring departments, faculty, and administrative functionality.
 
 ## 🎯 Features
 
@@ -34,18 +34,73 @@ A comprehensive wireframe for a university frontend application showcasing depar
   - Quick action buttons for content management
   - User session management
 
-## 🚀 Getting Started
+## 🚀 Quick Start
 
 ### Prerequisites
 
-- A modern web browser (Chrome, Firefox, Safari, Edge)
-- No additional dependencies required
+- Node.js (v20 or higher)
+- PostgreSQL
+- Git
 
-### Installation
+### 1. Clone Both Repositories
 
-1. Clone or download this repository
-2. Open `index.html` in your web browser
-3. Start exploring the wireframe!
+```bash
+# Clone frontend
+git clone https://github.com/haileyburgess/Fullstack-University-frontend.git
+cd Fullstack-University-frontend
+
+# Clone backend (in a separate directory)
+git clone https://github.com/haileyburgess/Fullstack-University-backend.git
+cd Fullstack-University-backend
+```
+
+### 2. Backend Setup
+
+```bash
+cd Fullstack-University-backend
+
+# Install dependencies
+npm install
+
+# Set up database
+createdb university_db
+
+# Set up environment variables
+echo "DATABASE_URL=postgresql://localhost:5432/university_db" > .env
+echo "JWT_SECRET=your-super-secret-jwt-key-for-university-app-2024" >> .env
+
+# Initialize database
+npm run db:reset
+
+# Start backend server
+npm start
+```
+
+The backend will run on `http://localhost:3002`
+
+### 3. Frontend Setup
+
+```bash
+cd Fullstack-University-frontend/university-frontend
+
+# Install dependencies
+npm install
+
+# Set up environment variables
+echo "REACT_APP_API_BASE_URL=http://localhost:3002/api" > .env.local
+
+# Start frontend server
+npm start
+```
+
+The frontend will run on `http://localhost:3000`
+
+### 4. Wireframe (Static Version)
+
+For the static wireframe version:
+
+1. Open `index.html` in your web browser
+2. Start exploring the wireframe!
 
 ### File Structure
 
