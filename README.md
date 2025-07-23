@@ -80,6 +80,19 @@ The backend will run on `http://localhost:3002`
 
 ### 3. Frontend Setup
 
+**Option A: Quick Setup (Recommended)**
+
+```bash
+cd Fullstack-University-frontend/university-frontend
+
+# Run setup script
+./setup.sh          # On Mac/Linux
+# OR
+setup.bat           # On Windows
+```
+
+**Option B: Manual Setup**
+
 ```bash
 cd Fullstack-University-frontend/university-frontend
 
